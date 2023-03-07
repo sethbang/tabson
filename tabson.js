@@ -1,3 +1,9 @@
+/* saveTabs() is a function that saves the current tabs in the active window to a JSON file. 
+It uses the browser.tabs.query() method to get all tabs in the current window and then loops 
+through them to get their title and url. It then formats the date for the filename and saves 
+it with formatting and date in filename using browser.downloads.download(). Finally, it adds 
+a listener for browser action click which calls saveTabs() when clicked.
+*/
 function saveTabs() {
   // get all tabs in the current window
   browser.tabs.query({ currentWindow: true }).then((tabs) => {
