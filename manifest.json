@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Tabson",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "tabson.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "Save Tabs to JSON"
+  },
+  "permissions": [
+    "tabs",
+    "downloads"
+  ],
+  "icons": {
+    "64": "icons/icon.png"
+  }
+}
