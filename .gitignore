@@ -1,1 +1,8 @@
 /web-ext-artifacts
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
+.env.vault
+.vscode

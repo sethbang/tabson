@@ -1,18 +1,22 @@
 {
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b8347bca-0d8d-40e8-bbb1-f0135ce45730}",
+      "strict_min_version": "65.0"
+    }
+  },
   "manifest_version": 2,
   "name": "Tabson",
-  "version": "1.1",
-  "background": {
-    "scripts": [
-      "tabson.js"
-    ]
-  },
+  "version": "1.4",
   "browser_action": {
-    "default_title": "Save Tabs to JSON"
+    "default_popup": "tabson.html",
+    "browser_style": true
   },
   "permissions": [
     "tabs",
-    "downloads"
+    "downloads",
+    "activeTab",
+    "downloads.open"
   ],
   "icons": {
     "64": "icons/icon.png"
